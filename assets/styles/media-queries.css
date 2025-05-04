@@ -1,0 +1,91 @@
+/* Para dispositivos móveis (até 480px) */
+@media (max-width: 480px) {
+  :root {
+    --header-margin: 10px;
+    --logo-size: 1.3rem;
+    --nav-gap: 1rem;
+    --nav-link-size: 1rem;
+    --btn-padding: 8px 16px;
+    --btn-font-size: 0.9rem;
+}
+
+.header {
+    margin: var(--header-margin);
+    position: fixed;
+    width: calc(100% - 20px);
+    top: 0;
+    z-index: 1000;
+}
+
+.container {
+    padding: 8px 12px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.menu-toggle {
+    display: block;
+    position: absolute;
+    right: 12px;
+    top: 12px;
+}
+
+.nav {
+    display: none;
+    flex-direction: row;
+    width: 100%;
+    padding: 15px 0;
+}
+
+.nav.open {
+    display: flex;
+}
+
+.navbar {
+    width: 100%;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+nav a {
+    padding: 8px 0;
+    display: block;
+}
+
+.btn {
+    width: 100%;
+    margin-top: 10px;
+}
+
+body {
+    padding-top: 70px; /* Espaço para o header fixo */
+}
+}
+  
+/* Para tablets (entre 481px e 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    
+}
+  
+/* Para laptops (entre 769px e 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+}
+  
+/* Para desktops/telas grandes (1025px ou mais) */
+@media (min-width: 1025px) {
+    
+}
