@@ -95,8 +95,8 @@ nav a:hover {
 
 /* Section Hero */
 .hero {
-    padding: 40px 20px;
-    margin: 20px;
+    padding: 108px 20px;
+    margin: 30px;
 }
 
 .hero-container {
@@ -140,14 +140,23 @@ nav a:hover {
 /* Section About */
 .about {
     padding: 5rem 0;
-    
+    background-color: var(--secondary-color);    
 }
 
-.about h2,
-.skills h2 {
+.about h2 {
     font-size: 2rem;
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
+}
+
+.about h3 {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.about-content__tittle {
+    text-align: justify !important;
 }
 
 .about-content {
@@ -161,46 +170,6 @@ nav a:hover {
     line-height: 1.6;
     margin-bottom: 2rem;
     text-align: justify;
-}
-
-/* Skills */
-.skills {
-    padding: 5rem 10rem;
-    background-color: var(--secondary-color);
-}
-
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 1.5rem;
-}
-
-.skills-card {
-    background-color: var(--text-color);
-    padding: 1.5rem;
-    border-radius: 0.5rem;
-    box-shadow:
-        0 4px 6px -1px rgba(0, 0, 0, 0.1),
-        0 2px 4px -2px rgba(0, 0, 0, 0.1);
-}
-
-.skills-card h3 {
-    margin-bottom: 1rem;
-    color: #fff;
-}
-
-.skill-bar {
-    height: 0.5rem;
-    background-color: var(--secondary-color);
-    border-radius: 0.5rem;
-    overflow: hidden;
-}
-
-.skill-progress {
-    height: 100%;
-    background-color: var(--text-color);
-    border-radius: 9999px;
-    transition: width 0.5s ease-in-out;
 }
 
 /* Projects Section */
@@ -286,4 +255,149 @@ nav a:hover {
 
 .project-link:hover {
     color: var(--primary-color);
+}
+
+/* Section training */
+.training {
+    text-align: center;
+    padding: 4rem;
+    position: relative;
+    background-color: var(--secondary-color);
+}
+
+.training h2 {
+    color: var(--text-color);
+    font-weight: 800;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+    position: relative;
+}
+
+.training h2::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 56px;
+    background-color: #303030;
+    margin: 0.25rem auto 0;
+    border-radius: 2px;
+}
+
+p.subtitle {
+    columns: #64748b;
+    font-size: 1rem;
+    margin-bottom: 3rem;
+}
+
+.line {
+    position: absolute;
+    top: 8rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1px;
+    height: calc(100% - 4rem);
+    background-color: #303030;
+    z-index: 0;
+}
+
+.content-wrapper {
+    position: relative;
+    z-index: 1;
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+.title-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.title-row h3 {
+    color: #626464;
+    font-weight: 600;
+    font-size: 1.125rem;
+    background-color: #303030;
+    padding: 0 0.5rem;
+    margin: 0;
+}
+
+.icon-circle {
+    margin-left: 0.75rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 1.5px solid #626464;
+    border-radius: 50%;
+    color: #626464;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.125rem;
+    background-color: #303030;
+}
+
+.card {
+    background-color: #626464;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    text-align: right;
+    color: var(--secondary-color);
+    line-height: 1.5;
+    position: relative;
+    z-index: 1;
+}
+
+.card .date {
+    color: #38bdf8;
+    font-weight: 500;
+    font-size: 0.875rem;
+    margin-bottom: 0.25rem;
+}
+.card .school {
+    color: #64748b;
+    font-size: 0.875rem;
+    margin-bottom: 0.75rem;
+}
+.card .description {
+    font-size: 0.875rem;
+    margin: 0;
+}
+
+.timeline-line {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 1px;
+    background-color: #1e293b; /* Tailwind slate-800 */
+    transform: translateX(-50%);
+    z-index: 0;
+}
+
+/* Responsive */
+@media (min-width: 640px) {
+    h2 {
+    font-size: 1.5rem;
+    }
+    p.subtitle {
+    font-size: 1.125rem;
+    }
+    .title-row h3 {
+    font-size: 1.25rem;
+    }
+    .icon-circle {
+    font-size: 1.25rem;
+    width: 2.75rem;
+    height: 2.75rem;
+    }
+    .card .date,
+    .card .school,
+    .card .description {
+    font-size: 1rem;
+    }
 }
