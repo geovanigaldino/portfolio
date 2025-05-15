@@ -4,207 +4,513 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Geovani Galdino | Dev</title>
-    <link rel="stylesheet" href="assets/styles/style.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
   </head>
   <body>
+    <!-- Hero Section -->
     <header class="header">
-      <div class="container">
-        <div class="logo">
-          <h1><a href="https://www.instagram.com/geovaniigs/" target="_blank">Geovani Galdino</a> |<a href="https://github.com/geovanigaldino" target="_blank"> Dev</a></h1>
-        </div>
+      <nav class="container">
+        <h1>Geovani Galdino</h1>
 
         <nav class="nav" id="nav">
-          <a href="#">Início</a>
-          <a href="#">Sobre Mim</a>
-          <a href="#">Projetos</a>
-          <a href="#">Formação</a>
+          <a href="#about">Sobre Mim</a>
+          <a href="#projects">Projetos</a>
+          <a href="#contact">Contato</a>
         </nav>
 
-        <div class="button">
-          <button class="btn">Contato</button>
-        </div>
-      </div>
+        <button id="theme-toggle" aria-label="Alternar tema">
+          <svg
+            id="theme-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2"></path>
+            <path d="M12 20v2"></path>
+            <path d="m4.93 4.93 1.41 1.41"></path>
+            <path d="m17.66 17.66 1.41 1.41"></path>
+            <path d="M2 12h2"></path>
+            <path d="M20 12h2"></path>
+            <path d="m6.34 17.66-1.41 1.41"></path>
+            <path d="m19.07 4.93-1.41 1.41"></path>
+          </svg>
+        </button>
+      </nav>
     </header>
 
-    <main>
-      <section class="hero" id="hero">
-          <div class="hero-container">
-            <div class="hero-content">
-              <div class="hero-text">
-                <h2>Desenvolvedor Front-End</h2>
-                <p>Estudante de Análise e Desenvolvimento de Sistemas, apaixonado por criar interfaces interativas e responsivas que proporcionam experiências incríveis aos usuários.</p>
-                <div class="hero-text__button">
-                  <a href="#projetos" class="btn">Ver Projetos</a>
-                  <a href="#contact" class="btn btn-outline">Entrar em Contato</a>
-                </div>
-              </div>
-              <div class="hero-image-wrapper">
-                <img src="assets/images/foto-geovani.png" alt="Foto de Geovani Galdino" class="hero-image" loading="lazy"/>
-              </div>
-            </div>
-          </div>
-      </section>
-        
-      <section id="about" class="about">
-          <div class="about-content">
-            <h2>Sobre Mim</h2>
-            <h3>Conheça um pouco mais sobre minha jornada e objetivos profissionais</h3>
-            <div class="about-content">
-              <p>
-                Sou um estudante de Análise e Desenvolvimento de Sistemas com foco em desenvolvimento front-end. Minha paixão está em criar interfaces que não apenas são bonitas, mas também funcionais e acessíveis.                       
-              </p>
-              <p>
-                Atualmente, estou aprimorando minhas habilidades em HTML, CSS e JavaScript. Busco constantemente aprender novas tecnologias e melhores práticas para desenvolver aplicações web de alta qualidade.
-              </p>
-              <p>
-                Meu objetivo é me tornar um desenvolvedor front-end completo, capaz de transformar ideias em interfaces interativas e responsivas que proporcionam experiências excepcionais aos usuários.
-              </p>
-            </div>
-          </div>
-      </section>
-
-      <section id="projects" class="projects">
-        <div class="projects-container">
-          <h2 class="projects-title">Projetos</h2>
-          <div class="projects-grid">
-            <article class="project-card">
-              <img src="assets/images/tela-inicial-landpage-curso-nails.PNG" alt="Landing page Curso de Unhas" loading="lazy">
-              <div class="project-content">
-                  <h3>Landpage Curso Nails Designer</h3>
-                  <p>Landing page desenvolvida para promover o Curso de Nails Designer da Ana Paula. </p>
-                  <div class="project-tags">
-                      <span>HTML</span>
-                      <span>CSS</span>
-                      <span>JavaScript</span>
-                  </div>
-                  <div class="project-links">
-                      <a href="https://github.com/geovanigaldino/LandingPage_CursoNailDesigner" class="project-link" target="_blank">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                              <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
-                              <path d="M9 18c-4.51 2-5-2-7-2"></path>
-                          </svg>
-                          <span>Código</span>
-                      </a>
-                      <a href="https://anapaula-nail-designer.vercel.app/" class="project-link" target="_blank">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                              <polyline points="15 3 21 3 21 9"></polyline>
-                              <line x1="10" y1="14" x2="21" y2="3"></line>
-                          </svg>
-                          <span>Demo</span>
-                      </a>
-                  </div>
-              </div>
-            </article>
-
-            <article class="project-card">
-              <img src="assets/images/tela-portfolio.PNG" 
-                    alt="Tela do Portfólio"
-                    loading="lazy">
-              <div class="project-content">
-                  <h3>Portfólio</h3>
-                  <p>Portfólio construido para aplicar, na prática, as habilidades que estou aprendendo.</p>
-                  <div class="project-tags">
-                      <span>HTML</span>
-                      <span>CSS</span>
-                      <span>JavaScript</span>
-                  </div>
-                  <div class="project-links">
-                      <a href="https://github.com/geovanigaldino/portfolio" class="project-link" target="_blank">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                              <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
-                              <path d="M9 18c-4.51 2-5-2-7-2"></path>
-                          </svg>
-                          <span>Código</span>
-                      </a>
-                      <a href="https://geovanigaldino.github.io/portfolio/" class="project-link" target="_blank">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                              <polyline points="15 3 21 3 21 9"></polyline>
-                              <line x1="10" y1="14" x2="21" y2="3"></line>
-                          </svg>
-                          <span>Demo</span>
-                      </a>
-                  </div>
-              </div>
-            </article>
-
-            <article class="project-card">
-              <img src="assets/images/tela-conversor.PNG" 
-                    alt="Tela do Conversor de Moedas"
-                    loading="lazy">
-              <div class="project-content">
-                  <h3>Conversor de Moedas</h3>
-                  <p>Conversor de Moedas em Java, com recursos extras como histórico de conversões e suporte a múltiplas moedas internacionais!</p>
-                  <div class="project-tags">
-                      <span>Java</span>
-                      <span>TypeScript</span>
-                      <span>Tailwind</span>
-                  </div>
-                  <div class="project-links">
-                      <a href="#" class="project-link">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                              <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
-                              <path d="M9 18c-4.51 2-5-2-7-2"></path>
-                          </svg>
-                          <span>Código</span>
-                      </a>
-                  </div>
-              </div>
-            </article>
-
-            <article class="project-card">
-              <img src="assets/images/tela-screenmach.PNG" 
-                    alt="Tela do Screenmatch"
-                    loading="lazy">
-              <div class="project-content">
-                  <h3>Screenmatch</h3>
-                  <p>Um aplicação que permite aos usuários pesquisar e encontrar informações sobre filmes e séries, utilizando uma API, desenvolvido no curso "Java: aplicando a Orientação a Objetos"</p>
-                  <div class="project-tags">
-                      <span>Java</span>
-                      <span>TypeScript</span>
-                      <span>Tailwind</span>
-                  </div>
-                  <div class="project-links">
-                      <a href="https://github.com/geovanigaldino/screenmatch" class="project-link" target="_blank">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                              <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
-                              <path d="M9 18c-4.51 2-5-2-7-2"></path>
-                          </svg>
-                          <span>Código</span>
-                      </a>                       
-                  </div>
-              </div>
-            </article>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h2>Desenvolvedor Front-End</h2>
+          <p>
+            Estudante de Análise e Desenvolvimento de Sistemas, apaixonado por
+            criar interfaces interativas e responsivas que proporcionam
+            experiências incríveis aos usuários.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">Ver Projetos</a>
+            <a href="#contact" class="btn btn-outline">Entrar em Contato</a>
           </div>
         </div>
-      </section>
+        <div class="hero-image">
+          <img
+            src="assets/img/foto-geovani.png"
+            alt="Foto de Geovani"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </section>
 
-      <section id="training" class="training">
-        <h2>Minha Formação</h2>
-        <p class="subtitle">Um histórico da minha jornada acadêmica e profissional na área de tecnologia</p>
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2>Sobre Mim</h2>
+        <div class="about-content">
+          <p>
+            Sou um desenvolvedor front-end em início de carreira, com grande
+            interesse em tecnologia e em constante aprendizado. Atualmente,
+            estou cursando Análise e Desenvolvimento de Sistemas e participando
+            de uma formação em back-end com Java, o que tem ampliado minha visão
+            sobre desenvolvimento de software como um todo.
+          </p>
+          <p>
+            No front-end, venho me dedicando à criação de interfaces modernas e
+            responsivas utilizando HTML, CSS e JavaScript, sempre buscando unir
+            boas práticas com uma experiência visual agradável. Estou
+            construindo meu portfólio com projetos práticos e tenho como
+            objetivo crescer na área, contribuindo com soluções que realmente
+            façam a diferença.
+          </p>
+          <p>
+            Minha paixão está em resolver problemas complexos e transformar
+            ideias em produtos digitais de alta qualidade, sempre focando na
+            experiência do usuário e nas melhores práticas de desenvolvimento.
+          </p>
+        </div>
+      </div>
+    </section>
 
-        <div class="line"></div>
-
-        <div class="content-wrapper">
-          <div class="title-row">
-            <h3>Análise e Desenvolvimento de Sistemas</h3>
-            <div class="icon-circle" aria-label="Ícone de chapéu de formatura">
-              <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2>Projetos</h2>
+        <div class="projects-grid">
+          <article class="project-card">
+            <img
+              src="assets/img/tela-inicial-landpage-curso-nails.PNG"
+              alt="Landing page Curso de Unhas"
+              loading="lazy"
+            />
+            <div class="project-content">
+              <h3>Landpage Curso Nails Designer</h3>
+              <p>
+                Landing page para estudo, desenvolvida para promover o Curso de Nails
+                Designer da Ana Paula.
+              </p>
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/geovanigaldino/LandingPage_CursoNailDesigner"
+                  class="project-link"
+                  target="_blank"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+                    ></path>
+                    <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                  </svg>
+                  <span>Código</span>
+                </a>
+                <a
+                  href="https://anapaula-nail-designer.vercel.app/"
+                  class="project-link"
+                  target="_blank"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                    ></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                  <span>Demo</span>
+                </a>
+              </div>
             </div>
+          </article>
+
+          <article class="project-card">
+            <img
+              src="assets/img/tela-portfolio.PNG"
+              alt="Tela do Portfólio"
+              loading="lazy"
+            />
+            <div class="project-content">
+              <h3>Portfólio</h3>
+              <p>
+                Portfólio construido para aplicar, na prática, as habilidades
+                que estou aprendendo.
+              </p>
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/geovanigaldino/portfolio"
+                  class="project-link"
+                  target="_blank"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+                    ></path>
+                    <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                  </svg>
+                  <span>Código</span>
+                </a>
+                <a
+                  href="https://geovanigaldino.github.io/portfolio/"
+                  class="project-link"
+                  target="_blank"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                    ></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                  <span>Demo</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img
+              src="assets/img/tela-conversor.PNG"
+              alt="Tela do Conversor de Moedas"
+              loading="lazy"
+            />
+            <div class="project-content">
+              <h3>Conversor de Moedas</h3>
+              <p>
+                Conversor de Moedas em Java, com recursos extras como histórico
+                de conversões e suporte a múltiplas moedas internacionais!
+              </p>
+              <div class="project-tags">
+                <span>Java</span>
+                <span>IntelliJ IDEA</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/geovanigaldino/ChallengeConversorDeMoedas" class="project-link" target="_blank">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+                    ></path>
+                    <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                  </svg>
+                  <span>Código</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img
+              src="assets/img/tela-screenmach.PNG"
+              alt="Tela do Screenmatch"
+              loading="lazy"
+            />
+            <div class="project-content">
+              <h3>Screenmatch</h3>
+              <p>
+                Um aplicação que permite aos usuários pesquisar e encontrar
+                informações sobre filmes e séries, utilizando uma API,
+                desenvolvido no curso "Java: aplicando a Orientação a Objetos"
+              </p>
+              <div class="project-tags">
+                <span>Java</span>
+                <span>IntelliJ IDEA</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/geovanigaldino/screenmatch"
+                  class="project-link"
+                  target="_blank"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+                    ></path>
+                    <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                  </svg>
+                  <span>Código</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img
+              src="assets/img/tela-amigo-secreto.PNG"
+              alt="Tela do Screenmatch"
+              loading="lazy"
+            />
+            <div class="project-content">
+              <h3>Projeto Amigo Secreto</h3>
+              <p>
+                Este projeto é um sistema de sorteio de amigo secreto. A aplicação permite organizar sorteios de forma simples, prática e divertida, utilizando JavaScript para a lógica e interação com o usuário.
+              </p>
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/geovanigaldino/projeto-amigo-secreto-refatorado"
+                  class="project-link"
+                  target="_blank"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+                    ></path>
+                    <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                  </svg>
+                  <span>Código</span>
+                </a>
+                <a
+                  href="https://projeto-amigo-secreto-refatorado.vercel.app/"
+                  class="project-link"
+                  target="_blank"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                    ></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                  <span>Demo</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Contato</h2>
+        <div class="contact-content">
+          <form
+            action="https://formspree.io/f/xpwdkejd"
+            method="POST"
+            class="contact-form"
+          >
+            <div class="form-group">
+              <label for="name">Nome</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Mensagem</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+              Enviar Mensagem
+            </button>
+          </form>
+
+          <div class="social-links">
+            <a
+              href="https://github.com/geovanigaldino"
+              class="social-link"
+              target="_blank"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+                ></path>
+                <path d="M9 18c-4.51 2-5-2-7-2"></path>
+              </svg>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/geovanigaldino/"
+              class="social-link"
+              target="_blank"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                ></path>
+                <rect width="4" height="12" x="2" y="9"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a
+              href="mailto:contato.geovanigaldino@gmail.com"
+              class="social-link"
+              target="_blank"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+              </svg>
+            </a>
           </div>
         </div>
+      </div>
+    </section>
 
-        <div class="card">
-          <p class="date">2025 - Presente</p>
-          <p class="school">Centro Universitário Internacional</p>
-          <p class="description">Curso de tecnologia com foco em desenvolvimento de software, banco de dados, análise de sistemas e gestão de projetos.</p>
-        </div>
-
-      </section>
-
-    </main>
+    <footer class="footer">
+      <div class="container">
+        <p>© 2025 Geovani Galdino. Todos os direitos reservados.</p>
+      </div>
+    </footer>
 
     <script src="script.js"></script>
   </body>
