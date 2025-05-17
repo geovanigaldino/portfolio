@@ -4,7 +4,7 @@ Bem-vindo ao repositório do meu portfólio! Este projeto foi desenvolvido para 
 
 ## ✨ Sobre
 
-Este portfólio tem como objetivo destacar meus trabalhos, trajetória acadêmica e profissional, além de facilitar o contato com recrutadores e outros desenvolvedores. O layout é responsivo, moderno e conta com modo claro/escuro.
+Este portfólio tem como objetivo destacar meus trabalhos e trajetória, além de facilitar o contato com recrutadores e outros desenvolvedores. O layout é responsivo, moderno e conta com modo claro/escuro.
 
 ## 🚀 Tecnologias Utilizadas
 
