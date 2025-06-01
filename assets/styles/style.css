@@ -46,7 +46,7 @@ img {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 0 4rem;
 }
 
 /* Header */
@@ -99,7 +99,7 @@ img {
 .hero .container {
     display: flex;
     align-items: center;
-    gap: 3rem;
+    gap: 6rem;
 }
 
 .hero-content {
@@ -116,14 +116,6 @@ img {
     font-size: 1.125rem;
     color: var(--text-secondary);
     margin-bottom: 2rem;
-}
-
-.hero-image {
-    flex: 1;
-}
-
-.hero-image img {
-    border-radius: 1rem;
 }
 
 /* Buttons */
